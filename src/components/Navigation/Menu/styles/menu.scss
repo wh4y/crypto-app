@@ -1,0 +1,96 @@
+
+.navigation {
+  &__menu {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: .95em;
+      display: block;
+      padding: .8em 0 .8em 15px;
+      text-decoration: none;
+      transition: .5s ease;
+      color: white !important;
+
+      span {
+        display: inline-block;
+        margin-left: .5em;
+      }
+
+      &:hover {
+        background: #1890ff;
+      }
+    }
+
+    .active {
+      background: #1890ff;
+      transition: .2s ease;
+    }
+
+    .burger-icon {
+      display: none;
+      padding-right: 15px;
+      max-width: calc(3vh + 8vw);
+      object-fit: contain;
+
+      @media screen and (max-width: 550px) {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: row;
+      height: 100%;
+
+      a {
+        padding: 0 15px 0 15px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .dropdown-menu {
+      position: relative;
+
+      ul, li, div {
+        position: fixed;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      a {
+        display: none;
+      }
+    }
+  }
+}
+
+.ant-dropdown {
+  position: fixed !important;
+
+  &::before {
+    content: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vw;
+    height: 20vh;
+    margin-top: 0;
+    padding: 0;
+
+    @media screen and(max-width: 500px) {
+      width: 40vw;
+    }
+
+    li {
+      display: flex;
+      flex: 1;
+      align-items: center;
+    }
+  }
+}

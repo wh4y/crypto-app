@@ -1,0 +1,40 @@
+.coin-passport {
+
+  &__header {
+    height: 50px;
+    margin-bottom: .5em;
+    display: flex;
+    align-items: center;
+    color: #1890ff;
+
+    img {
+      margin-left: .3em;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  &__description {
+
+    p, span {
+      font-size: .38em;
+      display: block;
+      padding-left: .4em;
+      border-left: .2em solid #1890ff;
+
+      &:not(:first-child) {
+        color: #808080;
+      }
+
+      &:first-child {
+        font-size: .43em !important;
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+
+    h3, h2 {
+      font-size: .55em !important;
+    }
+  }
+}

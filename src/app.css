@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+.app-container__upper-elements {
+  display: grid;
+  grid-template: auto/15% 85%;
+}
+@media screen and (max-width: 950px) {
+  .app-container__upper-elements {
+    grid-template: auto/20% 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .app-container__upper-elements {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

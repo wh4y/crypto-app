@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  height: 15vh;
+  background: #001529;
+}
+.footer__content-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  color: white !important;
+}
+.footer__breadcrumb a, .footer__breadcrumb span, .footer__breadcrumb span:last-child a {
+  color: #c5c5c5;
+}
+.footer__breadcrumb .active {
+  color: #1890ff !important;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=footer.css.map */
